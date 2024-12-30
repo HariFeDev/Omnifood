@@ -145,6 +145,10 @@
   align-items: center;
 }
 
+.step-img-box::before {
+  content: "";
+}
+
 .step-img {
   width: 35%;
 }
