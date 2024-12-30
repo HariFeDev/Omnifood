@@ -145,6 +145,11 @@
   align-items: center;
 }
 
+.step-img::before {
+  content: "";
+  display: block;
+}
+
 .step-img {
   width: 35%;
 }
