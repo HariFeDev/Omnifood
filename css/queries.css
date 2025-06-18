@@ -17,6 +17,22 @@ To convert px to em
   .heading-primary {
     font-size: 4.4rem;
   }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ******************* */
+/*  BELOW 1200px (Landscape Tablets) */
+/* ******************* */
+
+@media (max-width: 75em) {
+  html {
+    /* font-size: 9px */
+    /* 9px / 16px = 0.562 = 56.25% */
+    font-size: 56.25%;
+  }
 }
 
 /*
