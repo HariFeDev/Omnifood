@@ -144,7 +144,7 @@ To convert px to em
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in;
 
     /* Hide navigation */
     /* Allows NO transitions at all */
@@ -164,6 +164,7 @@ To convert px to em
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    transform: translateX(0);
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -184,6 +185,12 @@ To convert px to em
     font-size: 3rem;
   }
 }
+
+/* ******************* */
+/*  BELOW 704px (Smaller Tablets) */
+/* ******************* */
+
+@media(max-width: 44em)
 
 /*
 - FONT SIZE SYSTEM (px)
