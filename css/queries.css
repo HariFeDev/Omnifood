@@ -1,13 +1,8 @@
-/* rem and em do not depend on the html font-size in media queries! 1rem = 1em = 16px */
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 
-/* 
-To convert px to em
-1350px / 16px = 84.375 to round off = 84 
-*/
-
-/* ******************* */
-/*  BELOW 1344px (Smaller Desktops) */
-/* ******************* */
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
 
 @media (max-width: 84em) {
   .hero {
@@ -23,14 +18,13 @@ To convert px to em
   }
 }
 
-/* ******************* */
-/*  BELOW 1200px (Landscape Tablets) */
-/* ******************* */
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
 
 @media (max-width: 75em) {
   html {
-    /* font-size: 9px */
-    /* 9px / 16px = 0.562 = 56.25% */
+    /* 9px / 16px  */
     font-size: 56.25%;
   }
 
@@ -51,7 +45,7 @@ To convert px to em
     padding: 0 3.2rem;
   }
 
-  .main-nav-lists {
+  .main-nav-list {
     gap: 3.2rem;
   }
 
@@ -64,9 +58,9 @@ To convert px to em
   }
 }
 
-/* ******************* */
-/*  BELOW 944px (Tablets) */
-/* ******************* */
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
 
 @media (max-width: 59em) {
   html {
@@ -160,7 +154,7 @@ To convert px to em
     visibility: hidden;
   }
 
-  .nav-open .main-nav{
+  .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -168,14 +162,14 @@ To convert px to em
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
-  display: block;
-}
+    display: block;
+  }
 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
-  display: none;
-}
+    display: none;
+  }
 
-  .main-nav-lists {
+  .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
   }
@@ -186,21 +180,22 @@ To convert px to em
   }
 }
 
-/* ******************* */
-/*  BELOW 704px (Smaller Tablets) */
-/* ******************* */
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
 
-@media(max-width: 44em){
-  .grid--3-cols, .grid--4-cols{
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .diets{
+  .diets {
     grid-column: 1 / -1;
     justify-self: center;
   }
 
-  .heading-secondary{
+  .heading-secondary {
     margin-bottom: 4.8rem;
   }
 
@@ -208,31 +203,34 @@ To convert px to em
     width: 100%;
   }
 
-  .grid-footer {
+  .grid--footer {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .logo-col, .address-col{
+  .logo-col,
+  .address-col {
     grid-column: span 3;
   }
 
-  .nav-col{
+  .nav-col {
     grid-row: 1;
     grid-column: span 2;
     margin-bottom: 3.2rem;
   }
 }
 
-/* ******************* */
-/*  BELOW 544px (Phones) */
-/* ******************* */
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
 
-@media (max-width : 34em) {
-  .grid{
+@media (max-width: 34em) {
+  .grid {
     row-gap: 4.8rem;
   }
 
-  .grid--2-cols, .grid--3-cols, .grid--4-cols{
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
     grid-template-columns: 1fr;
   }
 
@@ -243,14 +241,14 @@ To convert px to em
   }
 
   .section-hero {
-  padding: 2.4rem 0 6.4rem 0;
-}
+    padding: 2.4rem 0 6.4rem 0;
+  }
 
-  .hero{
+  .hero {
     padding: 0 3.2rem;
   }
 
-  .hero-img{
+  .hero-img {
     width: 80%;
   }
 
@@ -258,23 +256,23 @@ To convert px to em
     height: 1.2rem;
   }
 
-  .step-img-box:nth-child(2){
+  .step-img-box:nth-child(2) {
     grid-row: 1;
   }
 
-  .step-img-box:nth-child(6){
+  .step-img-box:nth-child(6) {
     grid-row: 5;
   }
 
-  .step-img-box{
-    transform: translateY(2.4rem); 
+  .step-img-box {
+    transform: translateY(2.4rem);
   }
 
-  .testimonials{
+  .testimonials {
     grid-template-columns: 1fr;
   }
 
-  .gallery{
+  .gallery {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
   }
@@ -283,22 +281,20 @@ To convert px to em
     grid-template-columns: 1fr;
   }
 
-  .cta-text-box{
+  .cta-text-box {
     padding: 3.2rem;
   }
 
-  .cta-img-box{
+  .cta-img-box {
     height: 32rem;
     grid-row: 1;
   }
 }
 
-/*
-- FONT SIZE SYSTEM (px)
-
+/* 
+- Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
-- SPACING SYSTEM (px)
+- Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
 */
